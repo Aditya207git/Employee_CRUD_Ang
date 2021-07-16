@@ -1,0 +1,25 @@
+.header {
+    height: 60px;
+    background: var(--blue);
+    margin-top: 0;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: space-between;
+}
+.bell-icon{
+    border-radius: 20px;
+    background-color: #3761CC;
+    margin-left: 87%;
+    margin-right: 20px;
+}
+.person-icon{
+    border-radius: 20px;
+    background-color: #3761CC;
+    margin-right: 20px;
+}
+.logout-icon{
+    margin-right: 5px;
+}

@@ -1,0 +1,67 @@
+
+<div class="dialog-wrapper">
+    <h2 mat-dialog-title>Enter New Employee Details</h2>
+    <form [formGroup]="addEditEmployeeForm" (ngSubmit)="onSubmit()">
+        <div mat-dialog-content>
+            <p>First Name</p>
+            <mat-form-field appearance="outline" class="input-container">
+            <input matInput placeholder="First Name" formControlName="firstName" required>
+            </mat-form-field>
+        </div>
+        <div mat-dialog-content>
+            <p>Last Name</p>
+            <mat-form-field appearance="outline" class="input-container">
+            <input matInput placeholder="Last Name" formControlName="lastName">
+            </mat-form-field>
+        </div>
+        <div mat-dialog-content>
+            <p>Gender</p>
+            <mat-form-field appearance="outline" class="input-container">
+                <mat-select formControlName="gender">
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                    <mat-option value="other">Other</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div mat-dialog-content>
+            <p>Grade</p>
+            <mat-form-field appearance="outline" class="input-container">
+                <mat-select formControlName="grade">
+                    <mat-option value="3.1x">3.1x</mat-option>
+                    <mat-option value="3.2x">3.2x</mat-option>
+                    <mat-option value="3.3x">3.3x</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div mat-dialog-content>
+            <p>ODC / Non ODC</p>
+            <mat-form-field appearance="outline" class="input-container">
+                <mat-select formControlName="odcNonOdc">
+                    <mat-option value="odc">ODC</mat-option>
+                    <mat-option value="non-odc">Non-ODC</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div mat-dialog-content>
+            <p>BU</p>
+            <mat-form-field appearance="outline" class="input-container">
+                <mat-select formControlName="bu">
+                    <mat-option value="bu">BU</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div mat-dialog-content>
+            <p>Project</p>
+            <mat-form-field appearance="outline" class="input-container">
+                <mat-select formControlName="project">
+                    <mat-option value="project">Project</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <mat-dialog-actions>
+            <button class="btn-secondary" mat-button mat-dialog-close="cancel">Cancel</button>
+            <button type="submit" class="btn-primary" mat-button mat-dialog-close="add">Add</button>
+        </mat-dialog-actions>
+    </form>
+</div>

@@ -1,0 +1,12 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.input-container input {
+    width: 100%;
+}

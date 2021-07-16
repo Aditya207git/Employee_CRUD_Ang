@@ -1,0 +1,26 @@
+<div class="login-wrapper">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate class="login-form">
+      <h2>Login</h2>
+      <mat-form-field class="emailto" appearance="outline" class="form-field">
+          <input formControlName="email" matInput placeholder="Email ID">
+      </mat-form-field>      
+      <mat-form-field appearance="outline" class="form-field">
+          <input type="password" formControlName="password" matInput placeholder="Password">
+      </mat-form-field>
+      <div class="error-msg"
+          *ngIf="!loginForm.controls.email.valid && (loginForm.controls.email.dirty
+          ||loginForm.controls.email.touched)">
+          Enter a Valid EmailID
+      </div>
+
+      <div class="error-msg"
+          *ngIf="!loginForm.controls.password.valid && (loginForm.controls.password.dirty
+          ||loginForm.controls.password.touched)">
+          Enter a Valid Password
+      </div>
+
+      <button type="submit" class="btn-primary" mat-raised-button>Login</button>
+  </form>
+
+</div>
+

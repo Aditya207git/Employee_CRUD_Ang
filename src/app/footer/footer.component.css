@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: var(--white);
+  position: fixed;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.imgdiv{
+  height: 50px;      
+  width: 50px;
+  margin-right: -880px;
+  padding-right: 0px;
+}
+img,h3{
+  margin-left: 20px;
+}
+
+h3{
+  display: flex;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

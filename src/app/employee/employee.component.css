@@ -1,0 +1,44 @@
+button {
+  width: 20%;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-elevation-z8{
+  margin-top: 4%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h3{
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.btn-primary{
+  margin-right: 20px;
+}
+
+
+img{
+  height: 250px;
+   left: 50%;
+   margin-top: -125px;
+   margin-left: -125px;
+   position: absolute;
+   top: 50%;
+   width: 250px;
+}
+
+.doaction{
+padding-left: 10px;
+}
+
+.active-div {
+  background: var(--grey);
+}

@@ -1,0 +1,14 @@
+<div class="header">
+    <h3>My Bookings</h3>
+    <mat-icon class="bell-icon">notifications_none</mat-icon>
+    <button *ngIf="isLoggedIn === true"  mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon class="person-icon">person_outline</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <div class="logout-icon">
+          <button   mat-menu-item (click)="logout()">
+            <span>Logout</span>
+          </button>
+        </div>
+      </mat-menu>
+</div>
